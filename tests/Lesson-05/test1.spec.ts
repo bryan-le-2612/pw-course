@@ -4,6 +4,6 @@ test('Basic test', async ({ page }) => {
     await page.goto('https://material.playwrightvn.com/');
     await page.locator('text=Bài học 1: Register Page (có đủ các element)') .click();
     await page.waitForTimeout(1000);
-
+    await page.locator('//input[@id="username"]').fill("Bryan");
   });
 });
